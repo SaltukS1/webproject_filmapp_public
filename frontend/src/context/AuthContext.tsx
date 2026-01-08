@@ -26,6 +26,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const checkAuth = async () => {
     const token = localStorage.getItem('token');
+    if (token) {
+       console.log(' Mevcut Token (CheckAuth):', token);
+    }
     if (!token) {
       setLoading(false);
       return;

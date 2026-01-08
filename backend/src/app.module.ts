@@ -12,6 +12,7 @@ import { FilmsModule } from './films/films.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { CommentsModule } from './comments/comments.module';
 import { FilesModule } from './files/files.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { FilesModule } from './files/files.module';
     ReviewsModule,
     CommentsModule,
     FilesModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -48,6 +48,9 @@ const AppNavbar: React.FC = () => {
                 <DropdownItem as={Link} to="/admin/directors">
                   Manage Directors
                 </DropdownItem>
+                <DropdownItem as={Link} to="/admin/users">
+                  Manage Users
+                </DropdownItem>
                 <DropdownDivider />
               </>
             )}
@@ -67,23 +70,23 @@ const AppNavbar: React.FC = () => {
       </div>
       <NavbarCollapse>
         {}
-        <NavbarLink as={Link} to="/" active={false} className={location.pathname === '/' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
+        <NavbarLink as={Link as any} to="/" active={false} className={location.pathname === '/' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
           Home
         </NavbarLink>
         {}
-        <NavbarLink as={Link} to="/films" active={false} className={location.pathname === '/films' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
+        <NavbarLink as={Link as any} to="/films" active={false} className={location.pathname === '/films' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
           Films
         </NavbarLink>
         {}
-        <NavbarLink as={Link} to="/actors" active={false} className={location.pathname === '/actors' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
+        <NavbarLink as={Link as any} to="/actors" active={false} className={location.pathname === '/actors' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
           Actors
         </NavbarLink>
         {}
-        <NavbarLink as={Link} to="/directors" active={false} className={location.pathname === '/directors' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
+        <NavbarLink as={Link as any} to="/directors" active={false} className={location.pathname === '/directors' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
           Directors
         </NavbarLink>
         {}
-        <NavbarLink as={Link} to="/genres" active={false} className={location.pathname === '/genres' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
+        <NavbarLink as={Link as any} to="/genres" active={false} className={location.pathname === '/genres' ? "!text-blue-700 font-bold" : "text-gray-700 hover:text-blue-700"}>
           Genres
         </NavbarLink>
       </NavbarCollapse>
